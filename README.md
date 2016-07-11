@@ -1,10 +1,12 @@
-# IPA-latex-template
+# HF-Praxisarbeit-Template
 I created this template for my thesis as an information scientist<br>
-IPA = Individuelle Praktische Arbeit
+PA = Praxisarbeit
 
 ## Requirements
+
 ### Python pygments
 The [Minted](https://github.com/gpoore/minted) Latex package is used for syntax highlighting of code blocks and requires the python `pygments` package.
+
 ### Texlive 2015
 Older versions of  [Minted](https://github.com/gpoore/minted) don't support the `outputdir` option. Use [install-tl-ubuntu](https://github.com/scottkosty/install-tl-ubuntu) to install the latest Texlive version.
 
@@ -13,6 +15,7 @@ Texstudio is recommended for a full IDE. The provided Dockerfile is useful if yo
 
 ### Texstudio
 Texstudio is available for every Operating System and is easy to use.
+
 #### Fedora 23
 ```
 dnf install texstudio texlive-comment.noarch texlive-bable-german.noarch
@@ -21,6 +24,11 @@ dnf install texstudio texlive-comment.noarch texlive-bable-german.noarch
 ```
 apt-get install texstudio texlive-latex-extra texlive-lang-german
 ```
+#### Ubuntu 16.04 LTS
+```
+sudo apt install texstudio texlive-latex-extra texlive-lang-german
+```
+
 #### Windows 7
 I recommend [MikTeX](http://miktex.org/download) and [Texstudio](http://texstudio.org) (requires MikTex or TexLive). The missing packages will be installed on first build.
 
@@ -35,4 +43,4 @@ Docker installs the latest Texlive version and configures everything correctly:
  3. Run `make` to build the pdf
 
 ## Management Method
-The recommended management method for the swiss IPA is [Hermes](http://www.hermes.admin.ch/). It is often used by the swiss government for IT-Projects.
+The recommended management method for this project is [Hermes](http://www.hermes.admin.ch/). It is often used by the swiss government.
