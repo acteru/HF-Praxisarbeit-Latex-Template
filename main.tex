@@ -1,0 +1,41 @@
+% !TeX TXS-program:compile = txs:///pdflatex/[--shell-escape]
+
+% HF Dokumentation - Template
+
+\documentclass[a4paper,11pt,oneside,ngerman]{report} % Lege Grundeigenschaften des Dokuments fest
+
+\input{config}
+
+\begin{document}
+
+% TITELSEITE
+\begin{titlepage}
+    \begin{center}
+        \vspace*{3cm}
+        \textsc{\LARGE placeholder}\\[1.5cm]
+        \textsc{\LARGE placeholder}\\[1.5cm]
+        \begin{minipage}{0.4\textwidth}
+            \begin{flushleft} \large
+                \emph{Author:}\\
+                \ipaAuthor{}
+            \end{flushleft}
+        \end{minipage}%
+        \begin{minipage}{0.4\textwidth}
+            \begin{flushright} \large
+                \emph{Fachvorgesetzter:} \\
+                \ipaFachvorgesetzter{}
+            \end{flushright}
+        \end{minipage}
+        \vfill % Vertikaler Platz auffüllen
+        {\large \today}
+    \end{center}
+\end{titlepage}
+
+\input{preface/dokumentinformationen}
+\pagebreak
+\tableofcontents
+
+
+\include{part1}
+
+\end{document}
